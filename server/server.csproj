@@ -14,4 +14,8 @@
       <Folder Include="Styles\" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\logic\logic.csproj" />
+    </ItemGroup>
+
 </Project>
