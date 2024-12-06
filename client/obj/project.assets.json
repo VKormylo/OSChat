@@ -1,11 +1,33 @@
 {
   "version": 3,
   "targets": {
-    "net6.0-windows7.0": {}
+    "net6.0-windows7.0": {
+      "logic/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/logic.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/logic.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "logic/1.0.0": {
+      "type": "project",
+      "path": "../logic/logic.csproj",
+      "msbuildProject": "../logic/logic.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0-windows7.0": []
+    "net6.0-windows7.0": [
+      "logic >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Vitaliy\\.nuget\\packages\\": {}
@@ -34,7 +56,11 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Навчання (НУ ЛП)\\2 курс\\1 семестр\\ОС\\Labs\\OSChat\\logic\\logic.csproj": {
+              "projectPath": "D:\\Навчання (НУ ЛП)\\2 курс\\1 семестр\\ОС\\Labs\\OSChat\\logic\\logic.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
