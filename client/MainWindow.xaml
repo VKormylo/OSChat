@@ -5,8 +5,57 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:client"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
+        Title="MainWindow"
+        Height="550"
+        Width="1000"
+        ResizeMode="NoResize"
+        Background="#FAFAFA">
+    <Grid Margin="16,20,16,20">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+        <Border CornerRadius="10"
+                Background="#226DFF">
+            <Grid Margin="0,14">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="80" />
+                    <RowDefinition Height="60" />
+                    <RowDefinition Height="60" />
+                    <RowDefinition Height="60" />
+                    <RowDefinition Height="1*" />
+                </Grid.RowDefinitions>
+                <Border Grid.Row="0"
+                        VerticalAlignment="Top">
+                    <StackPanel HorizontalAlignment="Center">
+                        <Image Width="32"
+                               Height="32"
+                               Source="pack://application:,,,/Images/user-profile.png" />
+                        <Label Foreground="#fafafa"
+                               FontWeight="SemiBold"
+                               FontSize="11">User</Label>
+                    </StackPanel>
+                </Border>
+                <RadioButton Grid.Row="1"
+                             Style="{StaticResource SidebarTab}"
+                             Content="pack://application:,,,/Images/socket-icon.png" 
+                             Tag="Sockets"/>
+                <RadioButton Grid.Row="2"
+                             Style="{StaticResource SidebarTab}"
+                             Content="pack://application:,,,/Images/pipe-icon.png"
+                             Tag="Pipes"/>
+                <RadioButton Grid.Row="3"
+                             Style="{StaticResource SidebarTab}"
+                             Content="pack://application:,,,/Images/shared-memory-icon.png"
+                             Tag="Shared"/>
+                <Border Grid.Row="4"
+                        VerticalAlignment="Bottom"
+                        Cursor="Hand">
+                    <Image Source="pack://application:,,,/Images/logout-icon.png"
+                           Width="32"
+                           Height="32" />
+                </Border>
+            </Grid>
+        </Border>
     </Grid>
 </Window>

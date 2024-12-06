@@ -14,4 +14,17 @@
       <Folder Include="Styles\" />
     </ItemGroup>
 
+    <ItemGroup>
+      <None Remove="Images\logout-icon.png" />
+      <Resource Include="Images\logout-icon.png" />
+      <None Remove="Images\pipe-icon.png" />
+      <Resource Include="Images\pipe-icon.png" />
+      <None Remove="Images\shared-memory-icon.png" />
+      <Resource Include="Images\shared-memory-icon.png" />
+      <None Remove="Images\socket-icon.png" />
+      <Resource Include="Images\socket-icon.png" />
+      <None Remove="Images\user-profile.png" />
+      <Resource Include="Images\user-profile.png" />
+    </ItemGroup>
+
 </Project>
