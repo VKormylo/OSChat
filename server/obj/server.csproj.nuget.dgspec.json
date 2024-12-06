@@ -1,21 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\samol\\OneDrive\\Рабочий стол\\OS_Lab9\\server\\server.csproj": {}
+    "E:\\Max\\University\\OS\\OSChat\\server\\server.csproj": {}
   },
   "projects": {
-    "C:\\Users\\samol\\OneDrive\\Рабочий стол\\OS_Lab9\\logic\\logic.csproj": {
+    "E:\\Max\\University\\OS\\OSChat\\logic\\logic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\samol\\OneDrive\\Рабочий стол\\OS_Lab9\\logic\\logic.csproj",
+        "projectUniqueName": "E:\\Max\\University\\OS\\OSChat\\logic\\logic.csproj",
         "projectName": "logic",
-        "projectPath": "C:\\Users\\samol\\OneDrive\\Рабочий стол\\OS_Lab9\\logic\\logic.csproj",
-        "packagesPath": "C:\\Users\\samol\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\samol\\OneDrive\\Рабочий стол\\OS_Lab9\\logic\\obj\\",
+        "projectPath": "E:\\Max\\University\\OS\\OSChat\\logic\\logic.csproj",
+        "packagesPath": "C:\\Users\\RopR0\\.nuget\\packages\\",
+        "outputPath": "E:\\Max\\University\\OS\\OSChat\\logic\\obj\\",
         "projectStyle": "PackageReference",
         "UsingMicrosoftNETSdk": false,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\samol\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\RopR0\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -39,7 +43,7 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "direct"
+          "auditMode": "all"
         }
       },
       "frameworks": {
@@ -59,15 +63,15 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.28, 6.0.28]"
+              "version": "[6.0.36, 6.0.36]"
             },
             {
               "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.28, 6.0.28]"
+              "version": "[6.0.36, 6.0.36]"
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.28, 6.0.28]"
+              "version": "[6.0.36, 6.0.36]"
             }
           ],
           "frameworkReferences": {
@@ -78,22 +82,26 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\RopR0\\.dotnet\\sdk\\9.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\samol\\OneDrive\\Рабочий стол\\OS_Lab9\\server\\server.csproj": {
+    "E:\\Max\\University\\OS\\OSChat\\server\\server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\samol\\OneDrive\\Рабочий стол\\OS_Lab9\\server\\server.csproj",
+        "projectUniqueName": "E:\\Max\\University\\OS\\OSChat\\server\\server.csproj",
         "projectName": "server",
-        "projectPath": "C:\\Users\\samol\\OneDrive\\Рабочий стол\\OS_Lab9\\server\\server.csproj",
-        "packagesPath": "C:\\Users\\samol\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\samol\\OneDrive\\Рабочий стол\\OS_Lab9\\server\\obj\\",
+        "projectPath": "E:\\Max\\University\\OS\\OSChat\\server\\server.csproj",
+        "packagesPath": "C:\\Users\\RopR0\\.nuget\\packages\\",
+        "outputPath": "E:\\Max\\University\\OS\\OSChat\\server\\obj\\",
         "projectStyle": "PackageReference",
         "UsingMicrosoftNETSdk": false,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\samol\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\RopR0\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -107,8 +115,8 @@
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "C:\\Users\\samol\\OneDrive\\Рабочий стол\\OS_Lab9\\logic\\logic.csproj": {
-                "projectPath": "C:\\Users\\samol\\OneDrive\\Рабочий стол\\OS_Lab9\\logic\\logic.csproj"
+              "E:\\Max\\University\\OS\\OSChat\\logic\\logic.csproj": {
+                "projectPath": "E:\\Max\\University\\OS\\OSChat\\logic\\logic.csproj"
               }
             }
           }
@@ -121,7 +129,7 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "direct"
+          "auditMode": "all"
         }
       },
       "frameworks": {
@@ -141,19 +149,19 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.28, 6.0.28]"
+              "version": "[6.0.36, 6.0.36]"
             },
             {
               "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[6.0.28, 6.0.28]"
+              "version": "[6.0.36, 6.0.36]"
             },
             {
               "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.28, 6.0.28]"
+              "version": "[6.0.36, 6.0.36]"
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.28, 6.0.28]"
+              "version": "[6.0.36, 6.0.36]"
             }
           ],
           "frameworkReferences": {
@@ -164,7 +172,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\RopR0\\.dotnet\\sdk\\9.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
