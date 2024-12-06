@@ -9,21 +9,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="864272b4-7083-43a1-98f2-3943a75cdb36" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/client/obj/Debug/net6.0-windows/App.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/obj/Debug/net6.0-windows/MainWindow.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/obj/Debug/net6.0-windows/client.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/client/obj/Debug/net6.0-windows/client.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/obj/Debug/net6.0-windows/client.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/client/obj/Debug/net6.0-windows/client.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/obj/Debug/net6.0-windows/client.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/client/obj/Debug/net6.0-windows/client.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/obj/Debug/net6.0-windows/client.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/client/obj/Debug/net6.0-windows/client.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logic/Message.cs" beforeDir="false" afterPath="$PROJECT_DIR$/logic/Message.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/obj/Debug/net6.0-windows/App.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/obj/Debug/net6.0-windows/MainWindow.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/obj/Debug/net6.0-windows/server.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/Debug/net6.0-windows/server.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/obj/Debug/net6.0-windows/server.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/Debug/net6.0-windows/server.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/obj/Debug/net6.0-windows/server.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/Debug/net6.0-windows/server.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/obj/Debug/net6.0-windows/server.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/Debug/net6.0-windows/server.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.OSChat.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OSChat.dir/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +27,9 @@
   &quot;associatedIndex&quot;: 5
 }</component>
   <component name="ProjectId" id="2pqVXSr23rzqlNQIULup4fs8a3W" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -50,7 +39,7 @@
     ".NET Project.client.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "develop",
+    "git-widget-placeholder": "feature/21/create-pipes-view-model",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",

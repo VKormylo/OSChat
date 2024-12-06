@@ -27,4 +27,8 @@
       <Resource Include="Images\user-profile.png" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\logic\logic.csproj" />
+    </ItemGroup>
+
 </Project>
