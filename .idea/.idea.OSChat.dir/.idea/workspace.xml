@@ -9,21 +9,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="864272b4-7083-43a1-98f2-3943a75cdb36" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/client/obj/Debug/net6.0-windows/App.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/obj/Debug/net6.0-windows/MainWindow.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/obj/Debug/net6.0-windows/client.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/client/obj/Debug/net6.0-windows/client.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/obj/Debug/net6.0-windows/client.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/client/obj/Debug/net6.0-windows/client.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/obj/Debug/net6.0-windows/client.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/client/obj/Debug/net6.0-windows/client.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/obj/Debug/net6.0-windows/client.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/client/obj/Debug/net6.0-windows/client.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logic/Message.cs" beforeDir="false" afterPath="$PROJECT_DIR$/logic/Message.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/obj/Debug/net6.0-windows/App.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/obj/Debug/net6.0-windows/MainWindow.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/obj/Debug/net6.0-windows/server.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/Debug/net6.0-windows/server.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/obj/Debug/net6.0-windows/server.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/Debug/net6.0-windows/server.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/obj/Debug/net6.0-windows/server.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/Debug/net6.0-windows/server.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/obj/Debug/net6.0-windows/server.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/Debug/net6.0-windows/server.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.OSChat.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OSChat.dir/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,25 +27,28 @@
   &quot;associatedIndex&quot;: 5
 }</component>
   <component name="ProjectId" id="2pqVXSr23rzqlNQIULup4fs8a3W" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Project.client.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Project.client.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "feature/21/create-pipes-view-model",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Project.client">
     <configuration name="client" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
