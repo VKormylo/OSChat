@@ -1,18 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SiX/3cD1jLk=",
-  "success": false,
+  "dgSpecHash": "E9SDtP0RWKs=",
+  "success": true,
   "projectFilePath": "D:\\Навчання (НУ ЛП)\\2 курс\\1 семестр\\ОС\\Labs\\OSChat\\server\\server.csproj",
   "expectedPackageFiles": [],
-  "logs": [
-    {
-      "code": "NU1108",
-      "level": "Error",
-      "message": "Cycle detected. \r\n  server -> logic -> client -> logic.",
-      "libraryId": "logic",
-      "targetGraphs": [
-        "net6.0-windows7.0"
-      ]
-    }
-  ]
+  "logs": []
 }

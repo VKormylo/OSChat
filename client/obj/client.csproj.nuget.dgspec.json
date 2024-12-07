@@ -91,11 +91,7 @@
         "frameworks": {
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
-            "projectReferences": {
-              "D:\\Навчання (НУ ЛП)\\2 курс\\1 семестр\\ОС\\Labs\\OSChat\\client\\client.csproj": {
-                "projectPath": "D:\\Навчання (НУ ЛП)\\2 курс\\1 семестр\\ОС\\Labs\\OSChat\\client\\client.csproj"
-              }
-            }
+            "projectReferences": {}
           }
         },
         "warningProperties": {

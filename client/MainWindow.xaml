@@ -4,12 +4,18 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:client"
+        xmlns:viewModel="clr-namespace:logic;assembly=logic"
         mc:Ignorable="d"
         Title="MainWindow"
         Height="550"
         Width="1000"
         ResizeMode="NoResize"
         Background="#FAFAFA">
+    
+    <Window.DataContext>
+        <viewModel:MainViewModel />
+    </Window.DataContext>
+    
     <Grid Margin="16,20,16,20">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="56" />
@@ -38,14 +44,17 @@
                 </Border>
                 <RadioButton Grid.Row="1"
                              Style="{StaticResource SidebarTab}"
+                             Command="{Binding SocketsViewCommand}"
                              Content="pack://application:,,,/Images/socket-icon.png" 
                              Tag="Sockets"/>
                 <RadioButton Grid.Row="2"
                              Style="{StaticResource SidebarTab}"
+                             Command="{Binding PipesViewCommand}"
                              Content="pack://application:,,,/Images/pipe-icon.png"
                              Tag="Pipes"/>
                 <RadioButton Grid.Row="3"
                              Style="{StaticResource SidebarTab}"
+                             Command="{Binding MappingViewCommand}"
                              Content="pack://application:,,,/Images/shared-memory-icon.png"
                              Tag="Mapping"/>
                 <Border Grid.Row="4"
@@ -57,5 +66,7 @@
                 </Border>
             </Grid>
         </Border>
+        <ContentControl Grid.Column="1"
+                        Content="{Binding CurrentView}" />
     </Grid>
 </Window>
