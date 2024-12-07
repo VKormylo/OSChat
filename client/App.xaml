@@ -10,6 +10,7 @@
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Styles/SidebarTab.xaml" />
             </ResourceDictionary.MergedDictionaries>
+             
              <DataTemplate DataType="{x:Type viewModel:SocketsViewModel}">
                  <view:SocketsView/>
              </DataTemplate>
