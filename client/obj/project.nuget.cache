@@ -1,9 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "tT3Ur4ypm3U=",
+  "dgSpecHash": "091IfSZlF0A=",
   "success": false,
-  "projectFilePath": "D:\\Навчання (НУ ЛП)\\2 курс\\1 семестр\\ОС\\Labs\\OSChat\\client\\client.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\samol\\OneDrive\\Рабочий стол\\OS_Lab9\\client\\client.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\samol\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.28\\microsoft.netcore.app.ref.6.0.28.nupkg.sha512",
+    "C:\\Users\\samol\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.28\\microsoft.windowsdesktop.app.ref.6.0.28.nupkg.sha512",
+    "C:\\Users\\samol\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.28\\microsoft.aspnetcore.app.ref.6.0.28.nupkg.sha512",
+    "C:\\Users\\samol\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.28\\microsoft.netcore.app.host.win-x64.6.0.28.nupkg.sha512"
+  ],
   "logs": [
     {
       "code": "NU1108",
