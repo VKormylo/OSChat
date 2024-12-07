@@ -1,21 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Навчання (НУ ЛП)\\2 курс\\1 семестр\\ОС\\Labs\\OSChat\\server\\server.csproj": {}
+    "C:\\Users\\samol\\OneDrive\\Рабочий стол\\OS_Lab9\\server\\server.csproj": {}
   },
   "projects": {
-    "D:\\Навчання (НУ ЛП)\\2 курс\\1 семестр\\ОС\\Labs\\OSChat\\client\\client.csproj": {
+    "C:\\Users\\samol\\OneDrive\\Рабочий стол\\OS_Lab9\\client\\client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Навчання (НУ ЛП)\\2 курс\\1 семестр\\ОС\\Labs\\OSChat\\client\\client.csproj",
+        "projectUniqueName": "C:\\Users\\samol\\OneDrive\\Рабочий стол\\OS_Lab9\\client\\client.csproj",
         "projectName": "client",
-        "projectPath": "D:\\Навчання (НУ ЛП)\\2 курс\\1 семестр\\ОС\\Labs\\OSChat\\client\\client.csproj",
-        "packagesPath": "C:\\Users\\Vitaliy\\.nuget\\packages\\",
-        "outputPath": "D:\\Навчання (НУ ЛП)\\2 курс\\1 семестр\\ОС\\Labs\\OSChat\\client\\obj\\",
+        "projectPath": "C:\\Users\\samol\\OneDrive\\Рабочий стол\\OS_Lab9\\client\\client.csproj",
+        "packagesPath": "C:\\Users\\samol\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\samol\\OneDrive\\Рабочий стол\\OS_Lab9\\client\\obj\\",
         "projectStyle": "PackageReference",
         "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
-          "C:\\Users\\Vitaliy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\samol\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -29,8 +29,8 @@
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "D:\\Навчання (НУ ЛП)\\2 курс\\1 семестр\\ОС\\Labs\\OSChat\\logic\\logic.csproj": {
-                "projectPath": "D:\\Навчання (НУ ЛП)\\2 курс\\1 семестр\\ОС\\Labs\\OSChat\\logic\\logic.csproj"
+              "C:\\Users\\samol\\OneDrive\\Рабочий стол\\OS_Lab9\\logic\\logic.csproj": {
+                "projectPath": "C:\\Users\\samol\\OneDrive\\Рабочий стол\\OS_Lab9\\logic\\logic.csproj"
               }
             }
           }
@@ -39,6 +39,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -55,6 +60,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.28, 6.0.28]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[6.0.28, 6.0.28]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.28, 6.0.28]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.28, 6.0.28]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -63,22 +86,22 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Навчання (НУ ЛП)\\2 курс\\1 семестр\\ОС\\Labs\\OSChat\\logic\\logic.csproj": {
+    "C:\\Users\\samol\\OneDrive\\Рабочий стол\\OS_Lab9\\logic\\logic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Навчання (НУ ЛП)\\2 курс\\1 семестр\\ОС\\Labs\\OSChat\\logic\\logic.csproj",
+        "projectUniqueName": "C:\\Users\\samol\\OneDrive\\Рабочий стол\\OS_Lab9\\logic\\logic.csproj",
         "projectName": "logic",
-        "projectPath": "D:\\Навчання (НУ ЛП)\\2 курс\\1 семестр\\ОС\\Labs\\OSChat\\logic\\logic.csproj",
-        "packagesPath": "C:\\Users\\Vitaliy\\.nuget\\packages\\",
-        "outputPath": "D:\\Навчання (НУ ЛП)\\2 курс\\1 семестр\\ОС\\Labs\\OSChat\\logic\\obj\\",
+        "projectPath": "C:\\Users\\samol\\OneDrive\\Рабочий стол\\OS_Lab9\\logic\\logic.csproj",
+        "packagesPath": "C:\\Users\\samol\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\samol\\OneDrive\\Рабочий стол\\OS_Lab9\\logic\\obj\\",
         "projectStyle": "PackageReference",
         "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
-          "C:\\Users\\Vitaliy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\samol\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -92,8 +115,8 @@
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "D:\\Навчання (НУ ЛП)\\2 курс\\1 семестр\\ОС\\Labs\\OSChat\\client\\client.csproj": {
-                "projectPath": "D:\\Навчання (НУ ЛП)\\2 курс\\1 семестр\\ОС\\Labs\\OSChat\\client\\client.csproj"
+              "C:\\Users\\samol\\OneDrive\\Рабочий стол\\OS_Lab9\\client\\client.csproj": {
+                "projectPath": "C:\\Users\\samol\\OneDrive\\Рабочий стол\\OS_Lab9\\client\\client.csproj"
               }
             }
           }
@@ -102,6 +125,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -118,6 +146,20 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.28, 6.0.28]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.28, 6.0.28]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.28, 6.0.28]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -126,22 +168,22 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Навчання (НУ ЛП)\\2 курс\\1 семестр\\ОС\\Labs\\OSChat\\server\\server.csproj": {
+    "C:\\Users\\samol\\OneDrive\\Рабочий стол\\OS_Lab9\\server\\server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Навчання (НУ ЛП)\\2 курс\\1 семестр\\ОС\\Labs\\OSChat\\server\\server.csproj",
+        "projectUniqueName": "C:\\Users\\samol\\OneDrive\\Рабочий стол\\OS_Lab9\\server\\server.csproj",
         "projectName": "server",
-        "projectPath": "D:\\Навчання (НУ ЛП)\\2 курс\\1 семестр\\ОС\\Labs\\OSChat\\server\\server.csproj",
-        "packagesPath": "C:\\Users\\Vitaliy\\.nuget\\packages\\",
-        "outputPath": "D:\\Навчання (НУ ЛП)\\2 курс\\1 семестр\\ОС\\Labs\\OSChat\\server\\obj\\",
+        "projectPath": "C:\\Users\\samol\\OneDrive\\Рабочий стол\\OS_Lab9\\server\\server.csproj",
+        "packagesPath": "C:\\Users\\samol\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\samol\\OneDrive\\Рабочий стол\\OS_Lab9\\server\\obj\\",
         "projectStyle": "PackageReference",
         "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
-          "C:\\Users\\Vitaliy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\samol\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -155,8 +197,8 @@
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "D:\\Навчання (НУ ЛП)\\2 курс\\1 семестр\\ОС\\Labs\\OSChat\\logic\\logic.csproj": {
-                "projectPath": "D:\\Навчання (НУ ЛП)\\2 курс\\1 семестр\\ОС\\Labs\\OSChat\\logic\\logic.csproj"
+              "C:\\Users\\samol\\OneDrive\\Рабочий стол\\OS_Lab9\\logic\\logic.csproj": {
+                "projectPath": "C:\\Users\\samol\\OneDrive\\Рабочий стол\\OS_Lab9\\logic\\logic.csproj"
               }
             }
           }
@@ -165,6 +207,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -181,6 +228,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.28, 6.0.28]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[6.0.28, 6.0.28]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.28, 6.0.28]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.28, 6.0.28]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -189,7 +254,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
