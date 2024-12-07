@@ -13,7 +13,7 @@ public class RelayCommand : ICommand
         remove {  CommandManager.RequerySuggested -= value; }
     }
     // Creating RelayCommand to trigger commands from UI elements
-    public RelayCommand(Action<object> execute, Func<object, bool> canExecute)
+    public RelayCommand(Action<object> execute, Func<object, bool> canExecute = null)
     {
         _execute = execute;
         _canExecute = canExecute;
