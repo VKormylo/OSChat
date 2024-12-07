@@ -5,9 +5,6 @@
       "logic/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "client": "1.0.0"
-        },
         "compile": {
           "bin/placeholder/logic.dll": {}
         },
@@ -33,20 +30,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\samol\\.nuget\\packages\\": {}
+    "C:\\Users\\Vitaliy\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\samol\\OneDrive\\Рабочий стол\\OS_Lab9\\client\\client.csproj",
+      "projectUniqueName": "D:\\Навчання (НУ ЛП)\\2 курс\\1 семестр\\ОС\\Labs\\OSChat\\client\\client.csproj",
       "projectName": "client",
-      "projectPath": "C:\\Users\\samol\\OneDrive\\Рабочий стол\\OS_Lab9\\client\\client.csproj",
-      "packagesPath": "C:\\Users\\samol\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\samol\\OneDrive\\Рабочий стол\\OS_Lab9\\client\\obj\\",
+      "projectPath": "D:\\Навчання (НУ ЛП)\\2 курс\\1 семестр\\ОС\\Labs\\OSChat\\client\\client.csproj",
+      "packagesPath": "C:\\Users\\Vitaliy\\.nuget\\packages\\",
+      "outputPath": "D:\\Навчання (НУ ЛП)\\2 курс\\1 семестр\\ОС\\Labs\\OSChat\\client\\obj\\",
       "projectStyle": "PackageReference",
       "UsingMicrosoftNETSdk": false,
       "configFilePaths": [
-        "C:\\Users\\samol\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Vitaliy\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -60,8 +57,8 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "C:\\Users\\samol\\OneDrive\\Рабочий стол\\OS_Lab9\\logic\\logic.csproj": {
-              "projectPath": "C:\\Users\\samol\\OneDrive\\Рабочий стол\\OS_Lab9\\logic\\logic.csproj"
+            "D:\\Навчання (НУ ЛП)\\2 курс\\1 семестр\\ОС\\Labs\\OSChat\\logic\\logic.csproj": {
+              "projectPath": "D:\\Навчання (НУ ЛП)\\2 курс\\1 семестр\\ОС\\Labs\\OSChat\\logic\\logic.csproj"
             }
           }
         }
@@ -70,11 +67,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -91,24 +83,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[6.0.28, 6.0.28]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[6.0.28, 6.0.28]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[6.0.28, 6.0.28]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[6.0.28, 6.0.28]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
@@ -117,25 +91,8 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\samol\\OneDrive\\Рабочий стол\\OS_Lab9\\client\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    },
-    {
-      "code": "NU1108",
-      "level": "Error",
-      "message": "Cycle detected. \r\n  client -> logic -> client.",
-      "libraryId": "client",
-      "targetGraphs": [
-        "net6.0-windows7.0"
-      ]
-    }
-  ]
+  }
 }
