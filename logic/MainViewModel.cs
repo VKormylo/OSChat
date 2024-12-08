@@ -1,3 +1,5 @@
+using System.Collections.ObjectModel;
+
 namespace logic;
 
 public class MainViewModel: ObservableObject
@@ -18,6 +20,7 @@ public class MainViewModel: ObservableObject
             OnPropertyChanged();
         }
     }
+    public ObservableCollection<Message> Messages { get; set; }
     public MainViewModel()
     {
         SocketsVM = new SocketsViewModel();

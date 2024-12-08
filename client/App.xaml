@@ -9,6 +9,8 @@
          <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Styles/SidebarTab.xaml" />
+                <ResourceDictionary Source="Styles/TextBoxStyles.xaml" />
+                <ResourceDictionary Source="Styles/MessageTemplate.xaml" />
             </ResourceDictionary.MergedDictionaries>
              
              <DataTemplate DataType="{x:Type viewModel:SocketsViewModel}">

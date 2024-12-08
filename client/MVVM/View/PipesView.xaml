@@ -7,8 +7,48 @@
              xmlns:viewModel="clr-namespace:logic;assembly=logic"
              d:DataContext="{d:DesignInstance Type=viewModel:PipesViewModel}"
              mc:Ignorable="d"
-             d:DesignHeight="300" d:DesignWidth="300">
-    <Grid>
-        <Label>Pipes</Label>
-    </Grid>
+             d:DesignHeight="500" d:DesignWidth="650">
+    <Border Background="#fff" CornerRadius="10" Padding="26,12">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="80"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="80"/>
+            </Grid.RowDefinitions>
+            <Border>
+                <StackPanel>
+                    <StackPanel HorizontalAlignment="Left" Orientation="Horizontal" VerticalAlignment="Center">
+                        <Image HorizontalAlignment="Left" Width="32" Height="32" Source="pack://application:,,,/Images/user-profile-dark.png"/>
+                        <StackPanel Orientation="Vertical" Margin="12, 0,0,0">
+                            <TextBlock FontSize="20" FontWeight="SemiBold" Foreground="#102B4D">Server</TextBlock>
+                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                                <Rectangle Width="8" Height="8" Fill="#226DFF" RadiusX="10" RadiusY="10"></Rectangle>
+                                <TextBlock Margin="8,0,0,0" Foreground="#3C506A" FontWeight="Light">Online</TextBlock>
+                            </StackPanel>
+                        </StackPanel>
+                    </StackPanel>
+                    <Rectangle Margin="0, 8,0,0" Width="600" Height="1" Fill="#3C506A" Opacity="0.6"></Rectangle>
+                </StackPanel>
+            </Border>
+            <Border Grid.Row="1" HorizontalAlignment="Stretch">
+                <ListBox ItemsSource="{Binding Messages}" 
+                         ItemTemplateSelector="{StaticResource MessageTemplateSelector}" 
+                         Background="Transparent" BorderThickness="0" 
+                         HorizontalContentAlignment="Stretch"
+                         IsHitTestVisible="False" />
+            </Border>
+            <Border Grid.Row="2" HorizontalAlignment="Stretch">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch">
+                    <TextBox
+                             Height="50"
+                             Width="530"
+                             Text="Type your message here..."
+                             Style="{StaticResource TextBoxStyle}"/>
+                    <Border Background="#226DFF" Width="50" Height="50" CornerRadius="12" Margin="18,0,0,0" Cursor="Hand">
+                        <Image Width="32" Height="32" HorizontalAlignment="Center" VerticalAlignment="Center" Source="pack://application:,,,/Images/send-icon.png"/>
+                    </Border>
+                </StackPanel>
+            </Border>
+        </Grid>
+    </Border>
 </UserControl>
