@@ -9,13 +9,53 @@
 
     <ItemGroup>
       <Folder Include="Core\" />
-      <Folder Include="Images\" />
-      <Folder Include="MVVM\" />
-      <Folder Include="Styles\" />
     </ItemGroup>
 
     <ItemGroup>
       <ProjectReference Include="..\logic\logic.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Page Update="MVVM\View\MappingView.xaml">
+        <Generator>MSBuild:Compile</Generator>
+        <XamlRuntime>Wpf</XamlRuntime>
+        <SubType>Designer</SubType>
+      </Page>
+      <Page Update="MVVM\View\PipesView.xaml">
+        <Generator>MSBuild:Compile</Generator>
+        <XamlRuntime>Wpf</XamlRuntime>
+        <SubType>Designer</SubType>
+      </Page>
+      <Page Update="MVVM\View\SocketsView.xaml">
+        <Generator>MSBuild:Compile</Generator>
+        <XamlRuntime>Wpf</XamlRuntime>
+        <SubType>Designer</SubType>
+      </Page>
+      <Page Update="Styles\SidebarTab.xaml">
+        <Generator>MSBuild:Compile</Generator>
+        <XamlRuntime>Wpf</XamlRuntime>
+        <SubType>Designer</SubType>
+      </Page>
+      <Page Update="Styles\MessageTemplate.xaml">
+        <Generator>MSBuild:Compile</Generator>
+        <XamlRuntime>Wpf</XamlRuntime>
+        <SubType>Designer</SubType>
+      </Page>
+      <Page Update="Styles\TextBoxStyles.xaml">
+        <Generator>MSBuild:Compile</Generator>
+        <XamlRuntime>Wpf</XamlRuntime>
+        <SubType>Designer</SubType>
+      </Page>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Resource Include="Images\logout-icon.png" />
+      <Resource Include="Images\pipe-icon.png" />
+      <Resource Include="Images\send-icon.png" />
+      <Resource Include="Images\shared-memory-icon.png" />
+      <Resource Include="Images\socket-icon.png" />
+      <Resource Include="Images\user-profile-dark.png" />
+      <Resource Include="Images\user-profile.png" />
     </ItemGroup>
 
 </Project>
