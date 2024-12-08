@@ -1,11 +1,15 @@
 using System.Collections.ObjectModel;
 using System.Runtime.InteropServices;
 using System.Text;
+using System.Windows.Data;
 
 namespace logic;
 
 public class SocketsViewModel : ObservableObject
 {
+    private static SocketsViewModel _instance;
+    public static SocketsViewModel Instance => _instance ??= new SocketsViewModel();
+    
     private const int AF_INET = 2; // IPv4
     private const int SOCK_STREAM = 1; // TCP
     private const int IPPROTO_TCP = 6;
@@ -15,7 +19,11 @@ public class SocketsViewModel : ObservableObject
 
     public ObservableCollection<Message> Messages { get; private set; } = new ObservableCollection<Message>();
 
-    // WinAPI socket functions
+    public SocketsViewModel()
+    {
+        BindingOperations.EnableCollectionSynchronization(Messages, new object());
+    }
+
     [DllImport("Ws2_32.dll", SetLastError = true)] private static extern IntPtr socket(int af, int type, int protocol);
     [DllImport("Ws2_32.dll", SetLastError = true)] private static extern int bind(IntPtr s, ref sockaddr_in addr, int namelen);
     [DllImport("Ws2_32.dll", SetLastError = true)] private static extern int listen(IntPtr s, int backlog);
@@ -27,7 +35,6 @@ public class SocketsViewModel : ObservableObject
     [DllImport("Ws2_32.dll", SetLastError = true)] private static extern int WSAStartup(ushort wVersionRequested, out WSAData wsaData);
     [DllImport("Ws2_32.dll", SetLastError = true)] private static extern int WSACleanup();
 
-    // WinAPI structures
     [StructLayout(LayoutKind.Sequential)]
     private struct sockaddr_in
     {
@@ -49,7 +56,6 @@ public class SocketsViewModel : ObservableObject
         public IntPtr lpVendorInfo;
     }
 
-    // Start server
     public void StartServer(string ipAddress, int port)
     {
         InitWinSock();
@@ -70,30 +76,46 @@ public class SocketsViewModel : ObservableObject
 
         if (listen(serverSocket, 10) != 0)
             throw new Exception("Failed to listen on server socket.");
-
+        
         Messages.Add(new Message("Server started. Waiting for connections..."));
 
         Task.Run(() => AcceptClients());
     }
 
-    // Accept client connections
     private void AcceptClients()
     {
         var clientAddr = new sockaddr_in();
         int addrSize = Marshal.SizeOf(clientAddr);
+        bool isListening = true;
 
-        while (true)
+        try
         {
-            IntPtr clientSocket = accept(serverSocket, ref clientAddr, ref addrSize);
-            if (clientSocket != IntPtr.Zero)
+            while (isListening)
             {
-                Messages.Add(new Message("Client connected. Waiting for connections..."));
+                IntPtr newClientSocket = accept(serverSocket, ref clientAddr, ref addrSize);
+
+                if (newClientSocket == IntPtr.Zero)
+                {
+                    int errorCode = Marshal.GetLastWin32Error();
+                    Messages.Add(new Message($"Failed to accept client. Error code: {errorCode}"));
+                    continue;
+                }
+
+                clientSocket = newClientSocket;
+
+                Messages.Add(new Message("Client connected."));
+                
+                isListening = false;
+
                 Task.Run(() => ReceiveMessages(clientSocket));
             }
         }
+        catch (Exception ex)
+        {
+            Messages.Add(new Message($"Error in AcceptClients: {ex.Message}"));
+        }
     }
 
-    // Start client
     public void StartClient(string ipAddress, int port)
     {
         InitWinSock();
@@ -116,24 +138,46 @@ public class SocketsViewModel : ObservableObject
         Task.Run(() => ReceiveMessages(clientSocket));
     }
 
-    // Send message
-    public void SendMessage(string message)
+    public void SendMessage(string message, bool isClient)
     {
-        IntPtr socket = clientSocket != IntPtr.Zero ? clientSocket : serverSocket;
+        IntPtr socket = IntPtr.Zero;
+
+        if (isClient && clientSocket != IntPtr.Zero)
+        {
+            socket = clientSocket;
+        }
+        else if (!isClient && serverSocket != IntPtr.Zero)
+        {
+            if (clientSocket != IntPtr.Zero)
+            {
+                socket = clientSocket;
+            }
+            else
+            {
+                Messages.Add(new Message("No connected client socket available for server."));
+                return;
+            }
+        }
+
         if (socket == IntPtr.Zero)
         {
-            Messages.Add(new Message("Failed to send message."));
+            Messages.Add(new Message("Failed to send message. No valid socket available."));
             return;
         }
 
         byte[] buffer = Encoding.UTF8.GetBytes(message);
-        if (send(socket, buffer, buffer.Length, 0) <= 0)
-            throw new Exception("Failed to send message.");
+        int result = send(socket, buffer, buffer.Length, 0);
+
+        if (result <= 0)
+        {
+            int errorCode = Marshal.GetLastWin32Error();
+            Messages.Add(new Message($"Failed to send message. Error code: {errorCode}"));
+            return;
+        }
 
         Messages.Add(new Message(message, false));
     }
 
-    // Receive messages
     private void ReceiveMessages(IntPtr socket)
     {
         byte[] buffer = new byte[1024];
@@ -152,10 +196,9 @@ public class SocketsViewModel : ObservableObject
         }
     }
 
-    // Helper functions
     private void InitWinSock()
     {
-        ushort version = 0x0202; // Winsock 2.2
+        ushort version = 0x0202;
         if (WSAStartup(version, out var wsaData) != 0)
             throw new Exception("Failed to initialize Winsock.");
     }
