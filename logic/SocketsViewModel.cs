@@ -1,3 +1,4 @@
+using System.Collections.ObjectModel;
 using System.Runtime.InteropServices;
 using System.Text;
 
@@ -12,7 +13,7 @@ public class SocketsViewModel : ObservableObject
     private IntPtr serverSocket = IntPtr.Zero;
     private IntPtr clientSocket = IntPtr.Zero;
 
-    public List<Message> Messages { get; private set; } = new List<Message>();
+    public ObservableCollection<Message> Messages { get; private set; } = new ObservableCollection<Message>();
 
     // WinAPI socket functions
     [DllImport("Ws2_32.dll", SetLastError = true)] private static extern IntPtr socket(int af, int type, int protocol);
