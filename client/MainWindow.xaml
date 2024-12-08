@@ -46,6 +46,7 @@
                              Style="{StaticResource SidebarTab}"
                              Command="{Binding SocketsViewCommand}"
                              Content="pack://application:,,,/Images/socket-icon.png" 
+                             IsChecked="True"
                              Tag="Sockets"/>
                 <RadioButton Grid.Row="2"
                              Style="{StaticResource SidebarTab}"
