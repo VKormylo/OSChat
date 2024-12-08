@@ -35,16 +35,20 @@
                          ItemTemplateSelector="{StaticResource MessageTemplateSelector}" 
                          Background="Transparent" BorderThickness="0" 
                          HorizontalContentAlignment="Stretch"
-                         IsHitTestVisible="False" />
+                         /> 
             </Border>
             <Border Grid.Row="2" HorizontalAlignment="Stretch">
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch">
                     <TextBox
+                             x:Name="MessageInput"
                              Height="50"
                              Width="530"
                              Text="Type your message here..."
-                             Style="{StaticResource TextBoxStyle}"/>
-                    <Border Background="#226DFF" Width="50" Height="50" CornerRadius="12" Margin="18,0,0,0" Cursor="Hand">
+                             Style="{StaticResource TextBoxStyle}"
+                             GotFocus="MessageInput_OnGotFocus"
+                             LostFocus="MessageInput_OnLostFocus"
+                             KeyDown="MessageInput_OnKeyDown"/>
+                    <Border Name="SendMessageBtn" Background="#226DFF" Width="50" Height="50" CornerRadius="12" Margin="18,0,0,0" Cursor="Hand" MouseDown="SendMessageBtn_OnMouseDown">
                         <Image Width="32" Height="32" HorizontalAlignment="Center" VerticalAlignment="Center" Source="pack://application:,,,/Images/send-icon.png"/>
                     </Border>
                 </StackPanel>
