@@ -10,6 +10,8 @@
   <component name="ChangeListManager">
     <list default="true" id="864272b4-7083-43a1-98f2-3943a75cdb36" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.OSChat.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OSChat.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/MainWindow.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/client/MainWindow.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/MainWindow.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/client/MainWindow.xaml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/obj/Debug/net6.0-windows/client.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/client/obj/Debug/net6.0-windows/client.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/obj/Debug/net6.0-windows/client.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/client/obj/Debug/net6.0-windows/client.AssemblyInfoInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/obj/Debug/net6.0-windows/client.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/client/obj/Debug/net6.0-windows/client.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
@@ -20,10 +22,6 @@
       <change beforePath="$PROJECT_DIR$/client/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/client/obj/project.nuget.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/client/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/App.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/server/App.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/MainWindow.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/server/MainWindow.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/obj/Debug/net6.0-windows/App.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/Debug/net6.0-windows/App.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/obj/Debug/net6.0-windows/MainWindow.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/Debug/net6.0-windows/MainWindow.g.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/obj/Debug/net6.0-windows/server.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/Debug/net6.0-windows/server.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/obj/Debug/net6.0-windows/server.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/Debug/net6.0-windows/server.AssemblyInfoInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/obj/Debug/net6.0-windows/server.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/Debug/net6.0-windows/server.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
@@ -34,7 +32,6 @@
       <change beforePath="$PROJECT_DIR$/server/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/obj/server.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/server.csproj.nuget.dgspec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/obj/server.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/server.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/server.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,9 +63,10 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     ".NET Project.client.executor": "Run",
+    ".NET Project.server.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "feature/35/migrate-client-to-server",
+    "git-widget-placeholder": "feature/2/create-logout-function",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
