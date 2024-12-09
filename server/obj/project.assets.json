@@ -2,28 +2,9 @@
   "version": 3,
   "targets": {
     "net6.0-windows7.0": {
-      "client/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "logic": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/client.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/client.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.WindowsDesktop.App.WPF"
-        ]
-      },
       "logic/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "client": "1.0.0"
-        },
         "compile": {
           "bin/placeholder/logic.dll": {}
         },
@@ -37,11 +18,6 @@
     }
   },
   "libraries": {
-    "client/1.0.0": {
-      "type": "project",
-      "path": "../client/client.csproj",
-      "msbuildProject": "../client/client.csproj"
-    },
     "logic/1.0.0": {
       "type": "project",
       "path": "../logic/logic.csproj",
@@ -129,16 +105,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1108",
-      "level": "Error",
-      "message": "Cycle detected. \r\n  server -> logic -> client -> logic.",
-      "libraryId": "logic",
-      "targetGraphs": [
-        "net6.0-windows7.0"
-      ]
-    }
-  ]
+  }
 }

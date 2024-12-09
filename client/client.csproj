@@ -10,8 +10,6 @@
     <ItemGroup>
       <Folder Include="Core\" />
       <Folder Include="Images\" />
-      <Folder Include="MVVM\" />
-      <Folder Include="Styles\" />
     </ItemGroup>
 
     <ItemGroup>
@@ -25,6 +23,10 @@
       <Resource Include="Images\socket-icon.png" />
       <None Remove="Images\user-profile.png" />
       <Resource Include="Images\user-profile.png" />
+      <None Remove="Images\send-icon.png" />
+      <Resource Include="Images\send-icon.png" />
+      <None Remove="Images\user-profile-dark.png" />
+      <Resource Include="Images\user-profile-dark.png" />
     </ItemGroup>
 
     <ItemGroup>

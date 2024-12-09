@@ -106,11 +106,7 @@
         "frameworks": {
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
-            "projectReferences": {
-              "C:\\Users\\Tanya\\lab09\\OSChat\\client\\client.csproj": {
-                "projectPath": "C:\\Users\\Tanya\\lab09\\OSChat\\client\\client.csproj"
-              }
-            }
+            "projectReferences": {}
           }
         },
         "warningProperties": {
