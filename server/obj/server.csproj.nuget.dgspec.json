@@ -1,21 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\samol\\OneDrive\\Рабочий стол\\OS_Lab9\\server\\server.csproj": {}
+    "C:\\Users\\Tanya\\lab09\\OSChat\\server\\server.csproj": {}
   },
   "projects": {
-    "C:\\Users\\samol\\OneDrive\\Рабочий стол\\OS_Lab9\\logic\\logic.csproj": {
+    "C:\\Users\\Tanya\\lab09\\OSChat\\logic\\logic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\samol\\OneDrive\\Рабочий стол\\OS_Lab9\\logic\\logic.csproj",
+        "projectUniqueName": "C:\\Users\\Tanya\\lab09\\OSChat\\logic\\logic.csproj",
         "projectName": "logic",
-        "projectPath": "C:\\Users\\samol\\OneDrive\\Рабочий стол\\OS_Lab9\\logic\\logic.csproj",
-        "packagesPath": "C:\\Users\\samol\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\samol\\OneDrive\\Рабочий стол\\OS_Lab9\\logic\\obj\\",
+        "projectPath": "C:\\Users\\Tanya\\lab09\\OSChat\\logic\\logic.csproj",
+        "packagesPath": "C:\\Users\\Tanya\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Tanya\\lab09\\OSChat\\logic\\obj\\",
         "projectStyle": "PackageReference",
         "UsingMicrosoftNETSdk": false,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\samol\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Tanya\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -23,6 +27,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -56,20 +61,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.28, 6.0.28]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.28, 6.0.28]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.28, 6.0.28]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -78,22 +69,26 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\samol\\OneDrive\\Рабочий стол\\OS_Lab9\\server\\server.csproj": {
+    "C:\\Users\\Tanya\\lab09\\OSChat\\server\\server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\samol\\OneDrive\\Рабочий стол\\OS_Lab9\\server\\server.csproj",
+        "projectUniqueName": "C:\\Users\\Tanya\\lab09\\OSChat\\server\\server.csproj",
         "projectName": "server",
-        "projectPath": "C:\\Users\\samol\\OneDrive\\Рабочий стол\\OS_Lab9\\server\\server.csproj",
-        "packagesPath": "C:\\Users\\samol\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\samol\\OneDrive\\Рабочий стол\\OS_Lab9\\server\\obj\\",
+        "projectPath": "C:\\Users\\Tanya\\lab09\\OSChat\\server\\server.csproj",
+        "packagesPath": "C:\\Users\\Tanya\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Tanya\\lab09\\OSChat\\server\\obj\\",
         "projectStyle": "PackageReference",
         "UsingMicrosoftNETSdk": false,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\samol\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Tanya\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -101,14 +96,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "C:\\Users\\samol\\OneDrive\\Рабочий стол\\OS_Lab9\\logic\\logic.csproj": {
-                "projectPath": "C:\\Users\\samol\\OneDrive\\Рабочий стол\\OS_Lab9\\logic\\logic.csproj"
+              "C:\\Users\\Tanya\\lab09\\OSChat\\logic\\logic.csproj": {
+                "projectPath": "C:\\Users\\Tanya\\lab09\\OSChat\\logic\\logic.csproj"
               }
             }
           }
@@ -138,24 +134,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.28, 6.0.28]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[6.0.28, 6.0.28]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.28, 6.0.28]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.28, 6.0.28]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -164,7 +142,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }
