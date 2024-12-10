@@ -8,18 +8,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="864272b4-7083-43a1-98f2-3943a75cdb36" name="Changes" comment="">
+    <list default="true" id="e9654dd3-1529-4033-acfb-ea725708b614" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.OSChat.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OSChat.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/MainWindow.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/client/MainWindow.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/MainWindow.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/client/MainWindow.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/obj/Debug/net6.0-windows/client.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/client/obj/Debug/net6.0-windows/client.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/obj/Debug/net6.0-windows/client.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/client/obj/Debug/net6.0-windows/client.AssemblyInfoInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/client/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/obj/Debug/net6.0-windows/server.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/Debug/net6.0-windows/server.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/obj/Debug/net6.0-windows/server.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/Debug/net6.0-windows/server.AssemblyInfoInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/obj/server.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/server.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/obj/server.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/server.csproj.nuget.g.props" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,15 +26,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="mock://D:/Навчання (НУ ЛП)/2 курс/1 семестр/ОС/Labs/OSChat/logic/SocketsViewModel.cs" root0="SKIP_HIGHLIGHTING" />
-  </component>
-  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
-  <component name="ProjectColorInfo">{
-  &quot;customColor&quot;: &quot;&quot;,
-  &quot;associatedIndex&quot;: 5
-}</component>
-  <component name="ProjectId" id="2pqVXSr23rzqlNQIULup4fs8a3W" />
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 4
+}]]></component>
+  <component name="ProjectId" id="2q1ben06cAiVXAzwT4y1KEkagql" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
@@ -51,24 +40,18 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     ".NET Project.client.executor": "Run",
-    ".NET Project.server.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "feature/2/create-logout-function",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
+    "git-widget-placeholder": "develop",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Project.client">
     <configuration name="client" type="DotNetProject" factoryName=".NET Project">
-      <option name="EXE_PATH" value="" />
+      <option name="EXE_PATH" value="$PROJECT_DIR$/client/bin/Debug/net6.0-windows/client.exe" />
       <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/client/bin/Debug/net6.0-windows" />
       <option name="PASS_PARENT_ENVS" value="1" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
@@ -78,15 +61,15 @@
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
       <option name="PROJECT_KIND" value="DotNetCore" />
-      <option name="PROJECT_TFM" value="" />
+      <option name="PROJECT_TFM" value="net6.0-windows" />
       <method v="2">
         <option name="Build" />
       </method>
     </configuration>
     <configuration name="server" type="DotNetProject" factoryName=".NET Project">
-      <option name="EXE_PATH" value="" />
+      <option name="EXE_PATH" value="$PROJECT_DIR$/server/bin/Debug/net6.0-windows/server.exe" />
       <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/server/bin/Debug/net6.0-windows" />
       <option name="PASS_PARENT_ENVS" value="1" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
@@ -96,62 +79,30 @@
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
       <option name="PROJECT_KIND" value="DotNetCore" />
-      <option name="PROJECT_TFM" value="" />
+      <option name="PROJECT_TFM" value="net6.0-windows" />
       <method v="2">
         <option name="Build" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue=".NET Project.client" />
+      <item itemvalue=".NET Project.server" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="864272b4-7083-43a1-98f2-3943a75cdb36" name="Changes" comment="" />
-      <created>1733493631835</created>
+      <changelist id="e9654dd3-1529-4033-acfb-ea725708b614" name="Changes" comment="" />
+      <created>1733833127133</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1733493631835</updated>
-      <workItem from="1733493633453" duration="1321000" />
-      <workItem from="1733501664571" duration="688000" />
-      <workItem from="1733598544684" duration="11135000" />
-      <workItem from="1733659195635" duration="127000" />
-      <workItem from="1733664783174" duration="2556000" />
-      <workItem from="1733748996044" duration="5941000" />
-      <workItem from="1733758007439" duration="5325000" />
-      <workItem from="1733764378961" duration="3144000" />
-      <workItem from="1733770619391" duration="11817000" />
-      <workItem from="1733821396541" duration="380000" />
+      <updated>1733833127133</updated>
+      <workItem from="1733833129411" duration="207000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="develop" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-  </component>
 </project>
