@@ -19,7 +19,7 @@ public static class FileLogging
         if(type == "error")
         {
             filePath = $"{relativePath}{Constants.LOG_ERROR_FILE_NAME}";
-            content = $"Error ({sender}->{receiver}): {message}";
+            content = $"Error (on {sender}): {message}";
         };
         try
         {
