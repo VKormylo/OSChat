@@ -1,19 +1,23 @@
+using System;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using logic;
+using logic.imports;
 
 namespace server.MVVM.View;
 
 public partial class PipesView : UserControl
 {
+    
     private readonly PipesViewModel _pipesViewModel = PipesViewModel.Instance;
     
     public PipesView()
     {
         InitializeComponent();
         DataContext = _pipesViewModel;
+        _pipesViewModel.MessageReceivedEvent += OnMessageReceived;
 
         Task.Run(_pipesViewModel.StartServer);
     }
@@ -41,6 +45,7 @@ public partial class PipesView : UserControl
         {
             _pipesViewModel.SendMessage(text);
             MessageInput.Text = "";
+            MessagesContainer.ScrollIntoView(MessagesContainer.Items[MessagesContainer.Items.Count - 1]);
         }
     }
 
@@ -55,5 +60,13 @@ public partial class PipesView : UserControl
         {
             SendMessage();
         }
+    }
+
+    private void OnMessageReceived()
+    {
+        Application.Current.Dispatcher.Invoke(() =>
+        {
+            MessagesContainer.ScrollIntoView(MessagesContainer.Items[MessagesContainer.Items.Count - 1]);
+        });
     }
 }
