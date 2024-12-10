@@ -1,13 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "C9XIMSGhsiU=",
+  "dgSpecHash": "lmF0EQud6Oo=",
   "success": true,
-  "projectFilePath": "C:\\Users\\samol\\OneDrive\\Рабочий стол\\OS_Lab9\\server\\server.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\samol\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.28\\microsoft.netcore.app.ref.6.0.28.nupkg.sha512",
-    "C:\\Users\\samol\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.28\\microsoft.windowsdesktop.app.ref.6.0.28.nupkg.sha512",
-    "C:\\Users\\samol\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.28\\microsoft.aspnetcore.app.ref.6.0.28.nupkg.sha512",
-    "C:\\Users\\samol\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.28\\microsoft.netcore.app.host.win-x64.6.0.28.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\Tanya\\lab09\\OSChat\\server\\server.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }
