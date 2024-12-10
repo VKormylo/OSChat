@@ -27,7 +27,9 @@
                 </StackPanel>
             </Border>
             <Border Grid.Row="1" HorizontalAlignment="Stretch">
-                <ListBox ItemsSource="{Binding Messages}" 
+                <ListBox 
+                        x:Name="listBox"
+                        ItemsSource="{Binding Messages}" 
                          ItemTemplateSelector="{StaticResource MessageTemplateSelector}" 
                          Background="Transparent" BorderThickness="0" 
                          HorizontalContentAlignment="Stretch"/>
