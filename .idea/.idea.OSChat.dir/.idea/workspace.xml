@@ -14,21 +14,9 @@
       <change beforePath="$PROJECT_DIR$/client/MainWindow.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/client/MainWindow.xaml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/obj/Debug/net6.0-windows/client.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/client/obj/Debug/net6.0-windows/client.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/obj/Debug/net6.0-windows/client.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/client/obj/Debug/net6.0-windows/client.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/obj/Debug/net6.0-windows/client.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/client/obj/Debug/net6.0-windows/client.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/obj/Debug/net6.0-windows/client.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/client/obj/Debug/net6.0-windows/client.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/obj/client.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/obj/client.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/obj/client.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/client/obj/client.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/client/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/client/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/obj/Debug/net6.0-windows/server.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/Debug/net6.0-windows/server.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/obj/Debug/net6.0-windows/server.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/Debug/net6.0-windows/server.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/obj/Debug/net6.0-windows/server.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/Debug/net6.0-windows/server.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/obj/Debug/net6.0-windows/server.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/Debug/net6.0-windows/server.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/obj/server.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/server.csproj.nuget.dgspec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/obj/server.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/server.csproj.nuget.g.props" afterDir="false" />
@@ -75,8 +63,8 @@
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
-}]]></component>
-  <component name="RunManager" selected=".NET Project.server">
+}</component>
+  <component name="RunManager" selected=".NET Project.client">
     <configuration name="client" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -127,6 +115,11 @@
       <workItem from="1733598544684" duration="11135000" />
       <workItem from="1733659195635" duration="127000" />
       <workItem from="1733664783174" duration="2556000" />
+      <workItem from="1733748996044" duration="5941000" />
+      <workItem from="1733758007439" duration="5325000" />
+      <workItem from="1733764378961" duration="3144000" />
+      <workItem from="1733770619391" duration="11817000" />
+      <workItem from="1733821396541" duration="380000" />
     </task>
     <servers />
   </component>
@@ -135,6 +128,29 @@
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="develop" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
