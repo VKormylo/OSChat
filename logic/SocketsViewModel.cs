@@ -105,7 +105,7 @@ public class SocketsViewModel : ObservableObject
 
                 Messages.Add(new Message("Client connected."));
                 
-                isListening = false;
+                // isListening = false;
 
                 Task.Run(() => ReceiveMessages(clientSocket));
             }

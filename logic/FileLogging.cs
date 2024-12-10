@@ -5,12 +5,12 @@ namespace logic;
 
 public static class FileLogging
 {
-    public static void LogToFile(string message, string receiver = "client", string type = "message")
+    public static void LogToFile(string message, string sender = "client", string type = "message")
     {
         string filePath = string.Empty;
         string relativePath = "../../../../";
         string content = string.Empty;
-        string sender = receiver == "client" ? "server" : "client";
+        string receiver = sender == "client" ? "server" : "client";
         if (type == "message")
         {
             filePath = $"{relativePath}{Constants.LOG_SUCCESS_FILE_NAME}";
