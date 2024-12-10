@@ -8,6 +8,7 @@
              d:DataContext="{d:DesignInstance Type=viewModel:SocketsViewModel}"
              mc:Ignorable="d"
              d:DesignHeight="500" d:DesignWidth="650">
+    
     <Border Background="#fff" CornerRadius="10" Padding="26,12">
         <Grid>
             <Grid.RowDefinitions>

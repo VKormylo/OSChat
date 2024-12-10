@@ -8,19 +8,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="864272b4-7083-43a1-98f2-3943a75cdb36" name="Changes" comment="">
+    <list default="true" id="e9654dd3-1529-4033-acfb-ea725708b614" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.OSChat.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OSChat.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/MVVM/View/PipesView.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/client/MVVM/View/PipesView.xaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/MVVM/View/PipesView.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/client/MVVM/View/PipesView.xaml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/obj/Debug/net6.0-windows/client.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/client/obj/Debug/net6.0-windows/client.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/obj/Debug/net6.0-windows/client.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/client/obj/Debug/net6.0-windows/client.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/obj/Debug/net6.0-windows/client.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/client/obj/Debug/net6.0-windows/client.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/obj/Debug/net6.0-windows/client.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/client/obj/Debug/net6.0-windows/client.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/obj/client.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/obj/client.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/obj/client.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/client/obj/client.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/client/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/client/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logic/Constants.cs" beforeDir="false" afterPath="$PROJECT_DIR$/logic/Constants.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logic/PipesViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/logic/PipesViewModel.cs" afterDir="false" />
@@ -29,14 +22,7 @@
       <change beforePath="$PROJECT_DIR$/server/MVVM/View/PipesView.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/server/MVVM/View/PipesView.xaml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/obj/Debug/net6.0-windows/server.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/Debug/net6.0-windows/server.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/obj/Debug/net6.0-windows/server.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/Debug/net6.0-windows/server.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/obj/Debug/net6.0-windows/server.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/Debug/net6.0-windows/server.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/obj/Debug/net6.0-windows/server.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/Debug/net6.0-windows/server.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/obj/server.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/server.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/obj/server.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/server.csproj.nuget.g.props" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,15 +35,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="mock://D:/Навчання (НУ ЛП)/2 курс/1 семестр/ОС/Labs/OSChat/logic/SocketsViewModel.cs" root0="SKIP_HIGHLIGHTING" />
-  </component>
-  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
-  <component name="ProjectColorInfo">{
-  &quot;customColor&quot;: &quot;&quot;,
-  &quot;associatedIndex&quot;: 5
-}</component>
-  <component name="ProjectId" id="2pqVXSr23rzqlNQIULup4fs8a3W" />
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 4
+}]]></component>
+  <component name="ProjectId" id="2q1ben06cAiVXAzwT4y1KEkagql" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
@@ -85,9 +66,9 @@
 }</component>
   <component name="RunManager" selected=".NET Project.client">
     <configuration name="client" type="DotNetProject" factoryName=".NET Project">
-      <option name="EXE_PATH" value="" />
+      <option name="EXE_PATH" value="$PROJECT_DIR$/client/bin/Debug/net6.0-windows/client.exe" />
       <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/client/bin/Debug/net6.0-windows" />
       <option name="PASS_PARENT_ENVS" value="1" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
@@ -97,15 +78,15 @@
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
       <option name="PROJECT_KIND" value="DotNetCore" />
-      <option name="PROJECT_TFM" value="" />
+      <option name="PROJECT_TFM" value="net6.0-windows" />
       <method v="2">
         <option name="Build" />
       </method>
     </configuration>
     <configuration name="server" type="DotNetProject" factoryName=".NET Project">
-      <option name="EXE_PATH" value="" />
+      <option name="EXE_PATH" value="$PROJECT_DIR$/server/bin/Debug/net6.0-windows/server.exe" />
       <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/server/bin/Debug/net6.0-windows" />
       <option name="PASS_PARENT_ENVS" value="1" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
@@ -115,17 +96,21 @@
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
       <option name="PROJECT_KIND" value="DotNetCore" />
-      <option name="PROJECT_TFM" value="" />
+      <option name="PROJECT_TFM" value="net6.0-windows" />
       <method v="2">
         <option name="Build" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue=".NET Project.client" />
+      <item itemvalue=".NET Project.server" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="864272b4-7083-43a1-98f2-3943a75cdb36" name="Changes" comment="" />
-      <created>1733493631835</created>
+      <changelist id="e9654dd3-1529-4033-acfb-ea725708b614" name="Changes" comment="" />
+      <created>1733833127133</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1733493631835</updated>
@@ -142,9 +127,5 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
-  <component name="VcsManagerConfiguration">
-    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-  </component>
 </project>
