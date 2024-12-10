@@ -15,6 +15,7 @@ public partial class MappingView : UserControl
     {
         InitializeComponent();
         DataContext = MappingViewModel.Instance;
+        MappingViewModel.Instance.MessageReceivedEvent += onReceieved;
         Task.Run(() =>
         { 
             MappingViewModel.Instance.StartServer();
@@ -45,6 +46,7 @@ public partial class MappingView : UserControl
             {
                 MappingViewModel.Instance.SendMessage(MappingViewModel.Instance.serverEvent);
                 MessageInput.Text = "";
+                listBox.ScrollIntoView(listBox.Items[listBox.Items.Count - 1]);
             }
             catch (Exception ex)
             {
@@ -64,5 +66,14 @@ public partial class MappingView : UserControl
         {
             SendMessage();
         }
+    }
+    
+    public void onReceieved()
+    {
+        Application.Current.Dispatcher.Invoke(() =>
+        {
+            listBox.ScrollIntoView(listBox.Items[listBox.Items.Count - 1]);
+        });
+
     }
 }

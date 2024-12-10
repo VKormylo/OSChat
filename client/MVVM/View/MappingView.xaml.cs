@@ -9,12 +9,13 @@ namespace client.MVVM.View;
 
 public partial class MappingView : UserControl
 {
-    
+   
     private readonly MappingViewModel _mappingViewModel = MappingViewModel.Instance;
     public MappingView()
     {
         InitializeComponent();
         DataContext = MappingViewModel.Instance;
+        MappingViewModel.Instance.MessageReceivedEvent += onReceieved;
         
         Task.Run(() =>
         { 
@@ -46,7 +47,7 @@ public partial class MappingView : UserControl
             {
                 MappingViewModel.Instance.SendMessage(MappingViewModel.Instance.clientEvent);
                 MessageInput.Text = "";
-                
+                listBox.ScrollIntoView(listBox.Items[listBox.Items.Count - 1]);
             }
             catch (Exception ex)
             {
@@ -66,5 +67,14 @@ public partial class MappingView : UserControl
         {
             SendMessage();
         }
+    }
+    
+    public void onReceieved()
+    {
+        Application.Current.Dispatcher.Invoke(() =>
+        {
+            listBox.ScrollIntoView(listBox.Items[listBox.Items.Count - 1]);
+        });
+
     }
 }
