@@ -11,15 +11,16 @@ public static class FileLogging
         string relativePath = "../../../../";
         string content = string.Empty;
         string receiver = sender == "client" ? "server" : "client";
+        string timestamp = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
         if (type == "message")
         {
             filePath = $"{relativePath}{Constants.LOG_SUCCESS_FILE_NAME}";
-            content = $"Message ({sender}->{receiver}): {message}";
+            content = $"[{timestamp}] Message ({sender}->{receiver}): {message}";
         };
         if(type == "error")
         {
             filePath = $"{relativePath}{Constants.LOG_ERROR_FILE_NAME}";
-            content = $"Error (on {sender}): {message}";
+            content = $"[{timestamp}] Error (on {sender}): {message}";
         };
         try
         {

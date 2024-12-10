@@ -10,7 +10,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e9654dd3-1529-4033-acfb-ea725708b614" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.OSChat.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OSChat.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logic/SocketsViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/logic/SocketsViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logic/FileLogging.cs" beforeDir="false" afterPath="$PROJECT_DIR$/logic/FileLogging.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
