@@ -14,6 +14,7 @@ public partial class SocketsView : UserControl
     {
         InitializeComponent();
         DataContext = _socketsViewModel;
+        _socketsViewModel.MessageReceivedEvent += OnMessageReceived;
         
         Task.Run(() =>
         { 
@@ -62,6 +63,7 @@ public partial class SocketsView : UserControl
                 SocketsViewModel.Instance.SendMessage(message, true);
                 FileLogging.LogToFile(message);
                 MessageInput.Text = "";
+                MessagesContainer.ScrollIntoView(MessagesContainer.Items[MessagesContainer.Items.Count - 1]);
             }
             catch (Exception ex)
             {
@@ -82,5 +84,13 @@ public partial class SocketsView : UserControl
         {
             SendMessage();
         }
+    }
+    
+    private void OnMessageReceived()
+    {
+        Application.Current.Dispatcher.Invoke(() =>
+        {
+            MessagesContainer.ScrollIntoView(MessagesContainer.Items[MessagesContainer.Items.Count - 1]);
+        });
     }
 }

@@ -6,10 +6,14 @@ using System.Windows.Data;
 
 namespace logic;
 
+public delegate void MessageReceiveHandler();
+
 public class SocketsViewModel : ObservableObject
 {
     private static SocketsViewModel _instance;
     public static SocketsViewModel Instance => _instance ??= new SocketsViewModel();
+    
+    public event MessageReceiveHandler MessageReceivedEvent;
     
     private const int AF_INET = 2; // IPv4
     private const int SOCK_STREAM = 1; // TCP
@@ -215,7 +219,11 @@ public class SocketsViewModel : ObservableObject
                 break;
 
             string message = Encoding.UTF8.GetString(buffer, 0, bytesRead);
-            Messages.Add(new Message(message, true));
+            Application.Current.Dispatcher.Invoke(() =>
+            {
+                Messages.Add(new Message(message, true));
+            });
+            MessageReceivedEvent.Invoke();
         }
     }
 
