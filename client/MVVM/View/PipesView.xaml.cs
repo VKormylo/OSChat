@@ -43,7 +43,7 @@ public partial class PipesView : UserControl
         {
             _pipesViewModel.SendMessage(text);
             MessageInput.Text = "";
-            listBox.ScrollIntoView(listBox.Items[listBox.Items.Count - 1]);
+            MessagesContainer.ScrollIntoView(MessagesContainer.Items[MessagesContainer.Items.Count - 1]);
         }
     }
 
@@ -64,7 +64,7 @@ public partial class PipesView : UserControl
     {
         Application.Current.Dispatcher.Invoke(() =>
         {
-            listBox.ScrollIntoView(listBox.Items[listBox.Items.Count - 1]);
+            MessagesContainer.ScrollIntoView(MessagesContainer.Items[MessagesContainer.Items.Count - 1]);
         });
     }
 }
