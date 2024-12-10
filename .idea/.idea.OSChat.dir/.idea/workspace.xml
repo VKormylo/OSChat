@@ -10,8 +10,8 @@
   <component name="ChangeListManager">
     <list default="true" id="864272b4-7083-43a1-98f2-3943a75cdb36" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.OSChat.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OSChat.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/MainWindow.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/client/MainWindow.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/MainWindow.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/client/MainWindow.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/MVVM/View/PipesView.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/client/MVVM/View/PipesView.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/MVVM/View/PipesView.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/client/MVVM/View/PipesView.xaml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/obj/Debug/net6.0-windows/client.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/client/obj/Debug/net6.0-windows/client.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/obj/Debug/net6.0-windows/client.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/client/obj/Debug/net6.0-windows/client.AssemblyInfoInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/obj/Debug/net6.0-windows/client.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/client/obj/Debug/net6.0-windows/client.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
@@ -22,6 +22,11 @@
       <change beforePath="$PROJECT_DIR$/client/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/client/obj/project.nuget.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/client/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logic/Constants.cs" beforeDir="false" afterPath="$PROJECT_DIR$/logic/Constants.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logic/PipesViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/logic/PipesViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logic/imports/CommonImports.cs" beforeDir="false" afterPath="$PROJECT_DIR$/logic/imports/CommonImports.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/MVVM/View/PipesView.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/server/MVVM/View/PipesView.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/MVVM/View/PipesView.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/server/MVVM/View/PipesView.xaml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/obj/Debug/net6.0-windows/server.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/Debug/net6.0-windows/server.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/obj/Debug/net6.0-windows/server.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/Debug/net6.0-windows/server.AssemblyInfoInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/obj/Debug/net6.0-windows/server.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/Debug/net6.0-windows/server.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
@@ -60,23 +65,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Project.client.executor": "Run",
-    ".NET Project.server.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "feature/2/create-logout-function",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Project.client.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Project.server.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/27/create-functions-using-pipes&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager" selected=".NET Project.server">
+}</component>
+  <component name="RunManager" selected=".NET Project.client">
     <configuration name="client" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -127,6 +134,8 @@
       <workItem from="1733598544684" duration="11135000" />
       <workItem from="1733659195635" duration="127000" />
       <workItem from="1733664783174" duration="2556000" />
+      <workItem from="1733808401012" duration="3812000" />
+      <workItem from="1733823320002" duration="3492000" />
     </task>
     <servers />
   </component>
