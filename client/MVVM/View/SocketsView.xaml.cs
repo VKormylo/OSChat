@@ -60,7 +60,7 @@ public partial class SocketsView : UserControl
             try
             {
                 SocketsViewModel.Instance.SendMessage(message, true);
-                MessageInput.Text = "Type your message here...";
+                MessageInput.Text = "";
             }
             catch (Exception ex)
             {

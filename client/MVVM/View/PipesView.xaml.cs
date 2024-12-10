@@ -42,7 +42,7 @@ public partial class PipesView : UserControl
         if (!string.IsNullOrEmpty(text))
         {
             _pipesViewModel.SendMessage(text);
-            MessageInput.Text = "Type your message here...";
+            MessageInput.Text = "";
         }
     }
 
