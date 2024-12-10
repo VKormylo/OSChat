@@ -24,4 +24,7 @@ public static class Constants
     public const uint EVENT_ALL_ACCESS = 0x001F0003;
     public const string SERVER_MESSAGE_EVENT_NAME = "SERVER_MESSAGE_EVENT";
     public const string CLIENT_MESSAGE_EVENT_NAME = "CLIENT_MESSAGE_EVENT";
+    
+    public const string LOG_ERROR_FILE_NAME = "log-errors.txt";
+    public const string LOG_SUCCESS_FILE_NAME = "log-messages.txt";
 }
