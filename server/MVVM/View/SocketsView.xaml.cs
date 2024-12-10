@@ -62,11 +62,13 @@ public partial class SocketsView : UserControl
             try
             {
                 SocketsViewModel.Instance.SendMessage(message, false);
+                FileLogging.LogToFile(message, "server");
                 MessageInput.Text = "";
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"Error sending message: {ex.Message}");
+                FileLogging.LogToFile($"Error sending message: {ex.Message}", "server", "error");
             }
         }
     }

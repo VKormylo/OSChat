@@ -198,30 +198,10 @@ public class SocketsViewModel : ObservableObject
         {
             int errorCode = Marshal.GetLastWin32Error();
             
-            if (socket == serverSocket)
-            {
-                FileLogging.LogToFile($"Failed to send message. Error code: {errorCode}", "server", "error");
-            }
-            else
-            {
-                FileLogging.LogToFile($"Failed to send message. Error code: {errorCode}", "client", "error");
-            }
-            
-            MessageBox.Show($"Failed to send message. Error code: {errorCode}");
-            
-            return;
+            throw new Exception($"Failed to send message. Error code: {errorCode}");
         }
 
         Messages.Add(new Message(message, false));
-        
-        if (socket == serverSocket)
-        {
-            FileLogging.LogToFile(message, "server");
-        }
-        else
-        {
-            FileLogging.LogToFile(message);
-        }
     }
 
     private void ReceiveMessages(IntPtr socket)
@@ -232,18 +212,7 @@ public class SocketsViewModel : ObservableObject
         {
             int bytesRead = recv(socket, buffer, buffer.Length, 0);
             if (bytesRead <= 0)
-            {
-                if (socket == serverSocket)
-                {
-                    FileLogging.LogToFile("Failed to receive messages.", "server", "error");
-                }
-                else
-                {
-                    FileLogging.LogToFile("Failed to receive messages.", "client", "error");
-                }
-                
                 break;
-            }
 
             string message = Encoding.UTF8.GetString(buffer, 0, bytesRead);
             Messages.Add(new Message(message, true));

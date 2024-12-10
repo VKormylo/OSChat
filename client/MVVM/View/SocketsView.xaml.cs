@@ -60,11 +60,13 @@ public partial class SocketsView : UserControl
             try
             {
                 SocketsViewModel.Instance.SendMessage(message, true);
+                FileLogging.LogToFile(message);
                 MessageInput.Text = "";
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"Error sending message: {ex.Message}");
+                FileLogging.LogToFile($"Error sending message: {ex.Message}", "client", "error");
             }
         }
     }
