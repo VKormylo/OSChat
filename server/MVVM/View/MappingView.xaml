@@ -28,7 +28,7 @@
             </Border>
             <Border Grid.Row="1" HorizontalAlignment="Stretch">
                 <ListBox 
-                        x:Name="listBox"
+                        x:Name="MessagesContainer"
                         ItemsSource="{Binding Messages}" 
                          ItemTemplateSelector="{StaticResource MessageTemplateSelector}" 
                          Background="Transparent" BorderThickness="0" 

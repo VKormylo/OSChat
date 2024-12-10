@@ -47,7 +47,7 @@ public partial class MappingView : UserControl
             {
                 MappingViewModel.Instance.SendMessage(MappingViewModel.Instance.clientEvent);
                 MessageInput.Text = "";
-                listBox.ScrollIntoView(listBox.Items[listBox.Items.Count - 1]);
+                MessagesContainer.ScrollIntoView(MessagesContainer.Items[MessagesContainer.Items.Count - 1]);
             }
             catch (Exception ex)
             {
@@ -73,7 +73,7 @@ public partial class MappingView : UserControl
     {
         Application.Current.Dispatcher.Invoke(() =>
         {
-            listBox.ScrollIntoView(listBox.Items[listBox.Items.Count - 1]);
+            MessagesContainer.ScrollIntoView(MessagesContainer.Items[MessagesContainer.Items.Count - 1]);
         });
 
     }
