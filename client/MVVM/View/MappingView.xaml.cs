@@ -40,18 +40,20 @@ public partial class MappingView : UserControl
     
     private void SendMessage()
     {
-        MappingViewModel.Instance.Text= MessageInput.Text;
+        MappingViewModel.Instance.Text = MessageInput.Text;
         if (!string.IsNullOrEmpty(MappingViewModel.Instance.Text))
         {
             try
             {
                 MappingViewModel.Instance.SendMessage(MappingViewModel.Instance.clientEvent);
+                FileLogging.LogToFile(MappingViewModel.Instance.Text);
                 MessageInput.Text = "";
                 MessagesContainer.ScrollIntoView(MessagesContainer.Items[MessagesContainer.Items.Count - 1]);
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"Error sending message: {ex.Message}");
+                FileLogging.LogToFile($"Error sending message: {ex.Message}", "client", "error");
             }
         }
     }

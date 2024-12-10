@@ -45,11 +45,13 @@ public partial class MappingView : UserControl
             try
             {
                 MappingViewModel.Instance.SendMessage(MappingViewModel.Instance.serverEvent);
+                FileLogging.LogToFile(MappingViewModel.Instance.Text,"server");
                 MessageInput.Text = "";
                 MessagesContainer.ScrollIntoView(MessagesContainer.Items[MessagesContainer.Items.Count - 1]);
             }
             catch (Exception ex)
             {
+                FileLogging.LogToFile($"Error sending message: {ex.Message}", "server", "error");
                 MessageBox.Show($"Error sending message: {ex.Message}");
             }
         }

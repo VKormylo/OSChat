@@ -79,6 +79,10 @@ public class MappingViewModel: ObservableObject
         }
         catch (Exception ex)
         {
+            if(isServer)
+                FileLogging.LogToFile($"Error in ReceiveMessage: {ex.Message}", "server", "error");
+            else
+                FileLogging.LogToFile($"Error in ReceiveMessage: {ex.Message}", "client", "error");
             MessageBox.Show($"Error in ReceiveMessage: {ex.Message}");
         }
     }
@@ -97,11 +101,12 @@ public class MappingViewModel: ObservableObject
                 0,
                 Constants.FILE_SIZE,
                 Constants.FILE_NAME);
-            ViewFile();
+            ViewFile(true);
             Task.Run(() => ReceiveMessage(true));
         }
         catch (Exception e)
         {
+            FileLogging.LogToFile("Failed to create a file: " + e.Message, "server", "error");
             MessageBox.Show("Failed to create a file: " + e.Message);
         }   
     }
@@ -114,16 +119,17 @@ public class MappingViewModel: ObservableObject
             hFileMapping = MappingImports.OpenFileMapping(Constants.FILE_MAP_ALL_ACCESS,
                  false,
                  Constants.FILE_NAME);
-            ViewFile();
+            ViewFile(false);
             Task.Run(() => ReceiveMessage(false));
         }
         catch (Exception e)
         {
+            FileLogging.LogToFile("Failed to start a client: " + e.Message, "client", "error");
             MessageBox.Show("Failed to start a client: " + e.Message);
         }
     }
 
-    public void ViewFile()
+    public void ViewFile(bool isServer)
     { 
         try
         {
@@ -136,6 +142,10 @@ public class MappingViewModel: ObservableObject
         }
         catch (Exception e)
         {
+            if(isServer)
+                FileLogging.LogToFile("Failed to display a file in memory: " + e.Message, "server", "error");
+            else
+                FileLogging.LogToFile("Failed to display a file in memory: " + e.Message, "client", "error");
             MessageBox.Show("Failed to display a file in memory: " + e.Message);
         }
     }
@@ -143,5 +153,7 @@ public class MappingViewModel: ObservableObject
     {
         MappingImports.UnmapViewOfFile(pBaseAddress);
         CommonImports.CloseHandle(hFileMapping);
+        CommonImports.CloseHandle(serverEvent);
+        CommonImports.CloseHandle(clientEvent);
     }
 }
