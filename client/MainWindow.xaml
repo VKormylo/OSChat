@@ -59,8 +59,10 @@
                              Content="pack://application:,,,/Images/shared-memory-icon.png"
                              Tag="Mapping"/>
                 <Border Grid.Row="4"
+                        Name="LogoutBtn"
                         VerticalAlignment="Bottom"
-                        Cursor="Hand">
+                        Cursor="Hand"
+                        MouseDown="LogoutBtn_OnMouseDown">
                     <Image Source="pack://application:,,,/Images/logout-icon.png"
                            Width="32"
                            Height="32" />

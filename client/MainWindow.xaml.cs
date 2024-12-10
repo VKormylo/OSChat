@@ -24,5 +24,18 @@ namespace client
         {
             InitializeComponent();
         }
+
+        private void LogoutBtn_OnMouseDown(object sender, MouseButtonEventArgs e)
+        {
+            MessageBoxResult result = MessageBox.Show(
+                "Are you sure you want to exit?",
+                "Logout Confirmation",
+                MessageBoxButton.YesNo,
+                MessageBoxImage.Question);
+            if (result == MessageBoxResult.Yes)
+            {
+                Application.Current.Shutdown();
+            }
+        }
     }
 }
