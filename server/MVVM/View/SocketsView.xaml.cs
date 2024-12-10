@@ -62,6 +62,7 @@ public partial class SocketsView : UserControl
             try
             {
                 SocketsViewModel.Instance.SendMessage(message, false);
+                MessageInput.Text = "";
             }
             catch (Exception ex)
             {
