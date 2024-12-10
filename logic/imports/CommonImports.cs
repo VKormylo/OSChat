@@ -15,7 +15,7 @@ public static class CommonImports
         IntPtr lpEventAttributes,
         bool bManualReset,
         bool bInitialState,
-        string lpName);
+        string? lpName);
 
     [DllImport("kernel32.dll", SetLastError = true)]
     public static extern IntPtr OpenEvent(

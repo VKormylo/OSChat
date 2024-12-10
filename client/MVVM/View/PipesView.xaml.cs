@@ -14,8 +14,8 @@ public partial class PipesView : UserControl
     public PipesView()
     {
         InitializeComponent();
-        
         DataContext = _pipesViewModel;
+        _pipesViewModel.MessageReceivedEvent += OnMessageReceived;
         
         Task.Run(_pipesViewModel.StartClient);
     }
@@ -43,6 +43,7 @@ public partial class PipesView : UserControl
         {
             _pipesViewModel.SendMessage(text);
             MessageInput.Text = "";
+            listBox.ScrollIntoView(listBox.Items[listBox.Items.Count - 1]);
         }
     }
 
@@ -57,5 +58,13 @@ public partial class PipesView : UserControl
         {
             SendMessage();
         }
+    }
+
+    private void OnMessageReceived()
+    {
+        Application.Current.Dispatcher.Invoke(() =>
+        {
+            listBox.ScrollIntoView(listBox.Items[listBox.Items.Count - 1]);
+        });
     }
 }
