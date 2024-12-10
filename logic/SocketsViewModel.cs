@@ -123,9 +123,9 @@ public class SocketsViewModel : ObservableObject
                 }
 
                 clientSocket = newClientSocket;
-
+                
                 FileLogging.LogToFile("Client connected", "server");
-
+                
                 Task.Run(() => ReceiveMessages(clientSocket));
             }
         }
