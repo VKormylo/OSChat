@@ -21,17 +21,14 @@
                         <Image HorizontalAlignment="Left" Width="32" Height="32" Source="pack://application:,,,/Images/user-profile-dark.png"/>
                         <StackPanel Orientation="Vertical" Margin="12, 0,0,0">
                             <TextBlock FontSize="20" FontWeight="SemiBold" Foreground="#102B4D">Server</TextBlock>
-                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
-                                <Rectangle Width="8" Height="8" Fill="#226DFF" RadiusX="10" RadiusY="10"></Rectangle>
-                                <TextBlock Margin="8,0,0,0" Foreground="#3C506A" FontWeight="Light">Online</TextBlock>
-                            </StackPanel>
                         </StackPanel>
                     </StackPanel>
                     <Rectangle Margin="0, 8,0,0" Width="600" Height="1" Fill="#3C506A" Opacity="0.6"></Rectangle>
                 </StackPanel>
             </Border>
             <Border Grid.Row="1" HorizontalAlignment="Stretch">
-                <ListBox ItemsSource="{Binding Messages}" 
+                <ListBox x:Name="listBox"
+                        ItemsSource="{Binding Messages}" 
                          ItemTemplateSelector="{StaticResource MessageTemplateSelector}" 
                          Background="Transparent" BorderThickness="0" 
                          HorizontalContentAlignment="Stretch"/>

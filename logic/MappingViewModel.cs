@@ -1,4 +1,5 @@
 using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Runtime.InteropServices;
 using System.DirectoryServices;
 using System.Net.Sockets;
@@ -8,6 +9,8 @@ using logic.imports;
 
 namespace logic;
 
+public delegate void MessageReceivedHandle();
+
 public class MappingViewModel: ObservableObject
 {
     private static MappingViewModel _instance;
@@ -16,6 +19,7 @@ public class MappingViewModel: ObservableObject
     public IntPtr clientEvent = IntPtr.Zero;
     public IntPtr pBaseAddress = IntPtr.Zero;
     public IntPtr hFileMapping = IntPtr.Zero;
+    public event MessageReceivedHandle MessageReceivedEvent;
 
     public string Text { get; set; } = string.Empty;
     public ObservableCollection<Message> Messages { get; set; } = new ObservableCollection<Message>();
@@ -24,6 +28,7 @@ public class MappingViewModel: ObservableObject
 
     public MappingViewModel()
     {
+        
     }
 
     public void SendMessage(IntPtr signalEvent)
@@ -69,6 +74,7 @@ public class MappingViewModel: ObservableObject
                         Messages.Add(new Message(messageText, true));
                     });
                 }
+                MessageReceivedEvent.Invoke();
             }
         }
         catch (Exception ex)
