@@ -39,7 +39,7 @@
                                Source="pack://application:,,,/Images/user-profile.png" />
                         <Label Foreground="#fafafa"
                                FontWeight="SemiBold"
-                               FontSize="11">User</Label>
+                               FontSize="11">Client</Label>
                     </StackPanel>
                 </Border>
                 <RadioButton Grid.Row="1"

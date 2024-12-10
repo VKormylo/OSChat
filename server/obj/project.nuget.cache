@@ -1,13 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nlvO+CF/j7Y=",
+  "dgSpecHash": "E9SDtP0RWKs=",
   "success": true,
-  "projectFilePath": "E:\\Max\\University\\OS\\OSChat\\server\\server.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\RopR0\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.36\\microsoft.netcore.app.ref.6.0.36.nupkg.sha512",
-    "C:\\Users\\RopR0\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.36\\microsoft.windowsdesktop.app.ref.6.0.36.nupkg.sha512",
-    "C:\\Users\\RopR0\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.36\\microsoft.aspnetcore.app.ref.6.0.36.nupkg.sha512",
-    "C:\\Users\\RopR0\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.36\\microsoft.netcore.app.host.win-x64.6.0.36.nupkg.sha512"
-  ],
+  "projectFilePath": "D:\\Навчання (НУ ЛП)\\2 курс\\1 семестр\\ОС\\Labs\\OSChat\\server\\server.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }
