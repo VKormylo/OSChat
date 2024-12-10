@@ -6,6 +6,8 @@ using logic.imports;
 
 namespace logic;
 
+public delegate void MessageReceivedHandler();
+
 public class PipesViewModel: ObservableObject
 {
     private static PipesViewModel _instance;
@@ -13,6 +15,8 @@ public class PipesViewModel: ObservableObject
     public static PipesViewModel Instance => _instance ??= new PipesViewModel();
     
     public ObservableCollection<Message> Messages { get; } = new ObservableCollection<Message>();
+
+    public event MessageReceivedHandler MessageReceivedEvent;
     
     private IntPtr _pipeHandle;
 
@@ -190,6 +194,7 @@ public class PipesViewModel: ObservableObject
 
             string receivedText = Encoding.UTF8.GetString(buffer, 0, (int)bytesRead);
             Application.Current.Dispatcher.Invoke(() => Messages.Add(new Message(receivedText, true)));
+            MessageReceivedEvent.Invoke();
         }
     }
 
