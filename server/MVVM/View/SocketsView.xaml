@@ -30,8 +30,13 @@
                 <ListBox ItemsSource="{Binding Messages}" 
                          ItemTemplateSelector="{StaticResource MessageTemplateSelector}" 
                          Background="Transparent" BorderThickness="0" 
-                         HorizontalContentAlignment="Stretch"
-                         /> 
+                         HorizontalContentAlignment="Stretch">
+                    <ListBox.ItemContainerStyle>
+                        <Style TargetType="ListBoxItem">
+                            <Setter Property="IsHitTestVisible" Value="False" />
+                        </Style>
+                    </ListBox.ItemContainerStyle>
+                </ListBox> 
             </Border>
             <Border Grid.Row="2" HorizontalAlignment="Stretch">
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch">
