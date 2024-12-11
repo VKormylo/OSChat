@@ -49,8 +49,9 @@ public class PipesViewModel: ObservableObject
         if (_serverEvent == new IntPtr(-1)
             || _clientEvent == new IntPtr(-1))
         {
+            FileLogging.LogToFile("Failed to create server or client event.", "server", "error");
             MessageBox.Show(
-                "CreateEvent() failed", 
+                "Create event failed", 
                 "Error",
                 MessageBoxButton.OK,
                 MessageBoxImage.Error);
@@ -70,8 +71,9 @@ public class PipesViewModel: ObservableObject
         
         if (_pipeHandle == new IntPtr(-1))
         {
+            FileLogging.LogToFile("Failed to create named pipe.", "server", "error");
             MessageBox.Show(
-                "CreateNamedPipe() failed", 
+                "Create named pipe failed", 
                 "Error",
                 MessageBoxButton.OK,
                 MessageBoxImage.Error);
@@ -82,14 +84,17 @@ public class PipesViewModel: ObservableObject
 
         if (!isConnected)
         {
+            FileLogging.LogToFile("Failed to connect named pipe.", "server", "error");
             MessageBox.Show(
-                "ConnectNamedPipe() failed", 
+                "Connect named pipe failed", 
                 "Error",
                 MessageBoxButton.OK,
                 MessageBoxImage.Error);
             return;
         }
 
+        FileLogging.LogToFile("Server started. Waiting for connection...", "server");
+        
         Task.Run(ReceiveMessages);
     }
 
@@ -108,8 +113,9 @@ public class PipesViewModel: ObservableObject
         if (_serverEvent == new IntPtr(-1)
             || _clientEvent == new IntPtr(-1))
         {
+            FileLogging.LogToFile("Failed to open server or client event.", "client", "error");
             MessageBox.Show(
-                "OpenEvent() failed", 
+                "Open event failed", 
                 "Error",
                 MessageBoxButton.OK,
                 MessageBoxImage.Error);
@@ -128,13 +134,16 @@ public class PipesViewModel: ObservableObject
         
         if (_pipeHandle == new IntPtr(-1))
         {
+            FileLogging.LogToFile("Failed to open pipe.", "client", "error");
             MessageBox.Show(
-                "CreateFile() failed", 
+                "Create file failed", 
                 "Error",
                 MessageBoxButton.OK,
                 MessageBoxImage.Error);
             return;
         }
+        
+        FileLogging.LogToFile("Connected to server.");
         
         Task.Run(ReceiveMessages);
     }
@@ -151,9 +160,11 @@ public class PipesViewModel: ObservableObject
             out bytesWritten,
             IntPtr.Zero);
         
-        if (!fWrite) {
+        if (!fWrite)
+        {
+            FileLogging.LogToFile("Failed to send message.", _isServer ? "server" : "client", "error");
             MessageBox.Show(
-                "WriteFile() failed",
+                "Write file failed",
                 "Error",
                 MessageBoxButton.OK,
                 MessageBoxImage.Error);
@@ -184,6 +195,10 @@ public class PipesViewModel: ObservableObject
 
             if (!fRead || bytesRead == 0)
             {
+                FileLogging.LogToFile(
+                    "Disconnected from another process.",
+                    _isServer ? "server" : "client",
+                    "error");
                 MessageBox.Show(
                     "Another process disconnected",
                     "Error",

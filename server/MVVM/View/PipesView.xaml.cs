@@ -44,6 +44,7 @@ public partial class PipesView : UserControl
         if (!string.IsNullOrEmpty(text))
         {
             _pipesViewModel.SendMessage(text);
+            FileLogging.LogToFile(text, "server");
             MessageInput.Text = "";
             MessagesContainer.ScrollIntoView(MessagesContainer.Items[MessagesContainer.Items.Count - 1]);
         }
