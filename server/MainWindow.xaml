@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:server"
         xmlns:viewModel="clr-namespace:logic;assembly=logic"
         mc:Ignorable="d"
-        Title="MainWindow"
+        Title="LinkUp"
         Height="550"
         Width="790"
         ResizeMode="NoResize"
