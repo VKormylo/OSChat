@@ -28,7 +28,7 @@ public static class FileLogging
         }
         catch (Exception ex)
         {
-            MessageBox.Show($"Error logging to file: {ex.Message}");
+            Console.WriteLine(ex.Message);
         }
     }
 }
